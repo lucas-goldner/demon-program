@@ -6,6 +6,7 @@ const Nav = styled.div`
     top: 0;
     width: 100%;
     background-color: #2F2FA2;
+    z-index:1;
 `
 
 const List = styled.ul`
@@ -34,7 +35,6 @@ const ListLogin = styled.button`
         background-color: #553D76;
     }
 `
-
 
 const Navbar = () => {
 

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Titel = styled.h1`
     font-size: 5em;
     text-decoration: underline;
+    z-index:1;
 `
 const SubTitel = styled.h2`
     margin-top: -60px;
