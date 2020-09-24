@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
+import Demon from './Demon';
 
 const SummonContainer = styled.div`
     display: flex;
@@ -42,6 +43,7 @@ const SummonButton = styled.button`
     position: relative;
     z-index: 0;
     border-radius: 10px;
+    font-size: 1.5em;
 
     :before {
         content: '';
@@ -92,14 +94,18 @@ const SummonButton = styled.button`
 `
 
 const Summon = () => {
+    const [isVisible, setIsVisble] = useState(false);
+    const toggleVisbility = () =>{setIsVisble(!isVisible)}
+
     return(
         <>
         <SummonContainer>
         <Circle src="./smt_logo.png"></Circle>
+        <Demon isVisible={isVisible}/>
         <ActionContainer>
         <SummonTitel>Summon Your Demons</SummonTitel>
         <SummonDescr>Click on the button below to summon 5 random demons per day</SummonDescr>
-        <SummonButton>Summon</SummonButton>
+        <SummonButton onClick={toggleVisbility}>Summon</SummonButton>
         </ActionContainer>
         </SummonContainer>
         </>
