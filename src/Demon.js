@@ -16,88 +16,110 @@ const DemonData = [
     img: "./Demon-Designs/Jack-Frost.png",
     weakness: ["Fire"],
     resist: [],
+    drain: [],
+    repel: [],
     null: ["Ice"],
     skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
   },
   {
-    name: "Pyro-Jack", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
+    name: "Pyro-Jack", level: 5, Hp: 165, Sp: 153, Str: 9, Ma: 27, End: 9, Ag: 14, Luck:13, Exp: 30,
     img: "./Demon-Designs/Pyro-Jack.png",
-    weakness: ["Fire"],
+    weakness: ["Gun", "Ice", "Wind"],
     resist: [],
-    null: ["Ice"],
-    skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
+    repel: [],
+    drain: ["Fire"],
+    null: [],
+    skills: ["Agi", "Rakunda", "Sharp Student", "Dazzler", "Recist Sleep", "Maragi", "Fire Wall", "Fire Boost", "Agilao", "Ressist Ice"]
   },
   {
-    name: "Pixie", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
+    name: "Pixie", level: 3, Hp: 86, Sp: 124, Str: 4, Ma: 22, End: 15, Ag: 15, Luck:14, Exp: 42,
     img: "./Demon-Designs/Pixie.png",
-    weakness: ["Fire"],
-    resist: [],
-    null: ["Ice"],
-    skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
+    weakness: ["Gun", "Ice", "Curse"],
+    resist: ["Elec", "Bless"],
+    drain: [],
+    repel: [],
+    null: [],
+    skills: ["Dia", "Dormina", "Magic Knack", "Patra", "Zio", "Null Sleep", "Mazio"]
   },
   {
-    name: "Obariyon", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
+    name: "Obariyon", level: 8, Hp: 206, Sp: 78, Str: 14, Ma: 8, End: 11, Ag: 12, Luck:7, Exp: 65,
     img: "./Demon-Designs/Obariyon.png",
-    weakness: ["Fire"],
-    resist: [],
-    null: ["Ice"],
-    skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
+    weakness: ["Elec"],
+    resist: ["Phys"],
+    drain: [],
+    repel: [],
+    null: [],
+    skills: ["Sukunda", "Lucky Punch", "Sonic Punch", "Tarakuja", "Dekaja", "Silence Boost", "Muzzle Shoot"]
   },
   {
-    name: "Mokoi", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
+    name: "Mokoi", level: 6, Hp: 230, Sp: 78, Str: 13, Ma: 7, End: 10, Ag: 11, Luck:5, Exp: 37,
     img: "./Demon-Designs/Mokoi.png",
-    weakness: ["Fire"],
-    resist: [],
-    null: ["Ice"],
-    skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
+    weakness: ["Wind"],
+    resist: ["Elec"],
+    drain: [],
+    repel: [],
+    null: [],
+    skills: ["Tarakuja", "Single Shot", "Mudo", "Resist Curse", "Guillotine", "Power Knack", "Armor Splitter"]
   },
   {
-    name: "Phantom", level: 2, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
+    name: "Phantom", level: 6, Hp: 83, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 22,
     img: "./Demon-Designs/Phantom.png",
-    weakness: ["Fire"],
+    weakness: ["Bless"],
     resist: [],
-    null: ["Ice"],
-    skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
+    drain: [],
+    repel: [],
+    null: ["Phys", "Gun", "Curse"],
+    skills: ["Zio", "Mafui", "Zan", "Tentarafoo"]
   },
   {
-    name: "Shadow", level: 3, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
+    name: "Shadow", level: 3, Hp: 144, Sp: 66, Str: 13, Ma: 10, End: 10, Ag: 9, Luck:11, Exp: 77,
     img: "./Demon-Designs/Shadow.png",
     weakness: ["Fire"],
     resist: [],
+    drain: [],
+    repel: [],
     null: ["Ice"],
-    skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
+    skills: ["Zan", "Makafuji", "Patra", "Rakukaja", "Agilao", "Dormina", "Rakunda"]
   },
   {
-    name: "Gaki", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
+    name: "Gaki", level: 4, Hp: 134, Sp: 55, Str: 10, Ma: 7, End: 9, Ag: 11, Luck:7, Exp: 19,
     img: "./Demon-Designs/Gaki.png",
-    weakness: ["Fire"],
+    weakness: ["Fire", "Elec", "Force"],
     resist: [],
-    null: ["Ice"],
-    skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
+    drain: [],
+    repel: [],
+    null: ["Ice", "Death"],
+    skills: ["Zio", "Zan", "Body Rush", "Posion Claw"]
   },
   {
-    name: "Cu-Sith", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
+    name: "Cu-Sith", level: 10, Hp: 190, Sp: 108, Str: 40, Ma: 32, End: 21, Ag: 13, Luck:5, Exp: 79,
     img: "./Demon-Designs/Cu-Sith.png",
     weakness: ["Fire"],
-    resist: [],
-    null: ["Ice"],
-    skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
+    resist: ["Wind"],
+    drain: [],
+    repel: [],
+    null: [],
+    skills: ["Zan", "Pulinpa", "Rakukaja", "Mazan", "Ice Wall", "Zanma", "Resist Wind", "Skull Cracker"]
   },
   {
-    name: "Angel", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
+    name: "Angel", level: 12, Hp: 212, Sp: 117, Str: 7, Ma: 17, End: 9, Ag: 12, Luck:13, Exp: 63,
     img: "./Demon-Designs/Angel.png",
-    weakness: ["Fire"],
-    resist: [],
-    null: ["Ice"],
-    skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
+    weakness: ["Curse"],
+    resist: ["Elec"],
+    drain: [],
+    repel: [],
+    null: ["Bless"],
+    skills: ["Hama", "Self-Destruct", "Dia", "Zan", "Media", "Wind Boost", "Hama Boost", "Sukukaja", "Regenerate", "Patra"]
   },
   {
-    name: "Black-Frost", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
+    name: "Black-Frost", level: 15, Hp: 300, Sp: 200, Str: 15, Ma: 35, End: 16, Ag: 18, Luck:5, Exp: 101,
     img: "./Demon-Designs/Black-Frost.png",
-    weakness: ["Fire"],
-    resist: [],
+    weakness: ["Bless"],
+    resist: ["Fire", "Curse"],
+    drain: [],
+    repel: [],
     null: ["Ice"],
-    skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
+    skills: ["Mamudo", "Mabufu", "Ice Break", "Ice Amp", "Fire Amp", "Absorb Fire", "Agidyne", "Absorb Ice", "Ice Amp", "Bufula", "Maragion", "Ice Boost"]
   }
 ]
   
@@ -152,13 +174,15 @@ const Demon = ({isVisible, randomIndex}) =>{
       } else if(prop==="name") {
         return DemonData[randomIndex].name;
       } else if(prop==="stats") {
-        let curHP = DemonData[randomIndex].Hp;
-        let curSP = DemonData[randomIndex].Sp;
-        let curStr = DemonData[randomIndex].Str;
-        let curMa = DemonData[randomIndex].Ma;
-        let curEnd = DemonData[randomIndex].End;
-        let curAg = DemonData[randomIndex].Ag;
-        let curLuck = DemonData[randomIndex].Luck;
+        let randomBuff = Math.floor(Math.random()*10);
+        let randomDebuff = -1*(Math.floor(Math.random()*10));
+        let curHP = DemonData[randomIndex].Hp + randomBuff + randomDebuff;
+        let curSP = DemonData[randomIndex].Sp + randomBuff + randomDebuff;
+        let curStr = DemonData[randomIndex].Str + randomBuff + randomDebuff;
+        let curMa = DemonData[randomIndex].Ma + randomBuff + randomDebuff;
+        let curEnd = DemonData[randomIndex].End + randomBuff + randomDebuff;
+        let curAg = DemonData[randomIndex].Ag + randomBuff + randomDebuff;
+        let curLuck = DemonData[randomIndex].Luck + randomBuff + randomDebuff;
         let newData = [];
         return newData = [
           {
