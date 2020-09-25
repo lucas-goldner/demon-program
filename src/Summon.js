@@ -101,7 +101,7 @@ const Summon = () => {
         <>
         <SummonContainer>
         <Circle src="./smt_logo.png"></Circle>
-        <Demon isVisible={isVisible}/>
+        <Demon isVisible={isVisible}randomIndex={Math.floor(Math.random()*10)}/>
         <ActionContainer>
         <SummonTitel>Summon Your Demons</SummonTitel>
         <SummonDescr>Click on the button below to summon 5 random demons per day</SummonDescr>

@@ -28,64 +28,64 @@ const DemonData = [
     skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
   },
   {
-    name: "Pyro-Jack", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
-    img: "./Demon-Designs/Pyro-Jack.png",
+    name: "Pixie", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
+    img: "./Demon-Designs/Pixie.png",
     weakness: ["Fire"],
     resist: [],
     null: ["Ice"],
     skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
   },
   {
-    name: "Pyro-Jack", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
-    img: "./Demon-Designs/Pyro-Jack.png",
+    name: "Obariyon", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
+    img: "./Demon-Designs/Obariyon.png",
     weakness: ["Fire"],
     resist: [],
     null: ["Ice"],
     skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
   },
   {
-    name: "Pyro-Jack", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
-    img: "./Demon-Designs/Pyro-Jack.png",
+    name: "Mokoi", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
+    img: "./Demon-Designs/Mokoi.png",
     weakness: ["Fire"],
     resist: [],
     null: ["Ice"],
     skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
   },
   {
-    name: "Pyro-Jack", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
-    img: "./Demon-Designs/Pyro-Jack.png",
+    name: "Phantom", level: 2, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
+    img: "./Demon-Designs/Phantom.png",
     weakness: ["Fire"],
     resist: [],
     null: ["Ice"],
     skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
   },
   {
-    name: "Pyro-Jack", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
-    img: "./Demon-Designs/Pyro-Jack.png",
+    name: "Shadow", level: 3, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
+    img: "./Demon-Designs/Shadow.png",
     weakness: ["Fire"],
     resist: [],
     null: ["Ice"],
     skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
   },
   {
-    name: "Pyro-Jack", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
-    img: "./Demon-Designs/Pyro-Jack.png",
+    name: "Gaki", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
+    img: "./Demon-Designs/Gaki.png",
     weakness: ["Fire"],
     resist: [],
     null: ["Ice"],
     skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
   },
   {
-    name: "Pyro-Jack", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
-    img: "./Demon-Designs/Pyro-Jack.png",
+    name: "Cu-Sith", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
+    img: "./Demon-Designs/Cu-Sith.png",
     weakness: ["Fire"],
     resist: [],
     null: ["Ice"],
     skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
   },
   {
-    name: "Pyro-Jack", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
-    img: "./Demon-Designs/Pyro-Jack.png",
+    name: "Angel", level: 5, Hp: 214, Sp: 129, Str: 12, Ma: 22, End: 11, Ag: 13, Luck:10, Exp: 28,
+    img: "./Demon-Designs/Angel.png",
     weakness: ["Fire"],
     resist: [],
     null: ["Ice"],
@@ -100,30 +100,6 @@ const DemonData = [
     skills: ["Bufu", "Mabufu", "Bufula", "Mabufula", "Ice Boost", "Freeze Boost", "Marakunda", "Dodge Fire", "Me Patra", "Ice Break"]
   }
 ]
-
-const data = [
-    {
-      name: 'HP', Points: 214,
-    },
-    {
-      name: 'SP', Points: 129,
-    },
-    {
-      name: 'Str', Points: 12,
-    },
-    {
-      name: 'Ma', Points: 22,
-    },
-    {
-      name: 'End', Points: 11,
-    },
-    {
-      name: 'Ag', Points: 13,
-    },
-    {
-      name: 'Luck', Points: 10,
-    },
-  ];
   
   const getIntroOfPage = (label) => {
     if (label === 'HP') {
@@ -169,9 +145,8 @@ const Stats = styled.div`
     position: absolute;
 `
 
-const Demon = ({isVisible}) =>{
+const Demon = ({isVisible, randomIndex}) =>{
     const RandomDemon = (DemonData, prop) =>{
-      let randomIndex = Math.floor(Math.random()*10);
       if(prop==="img"){
         return DemonData[randomIndex].img;
       } else if(prop==="name") {
