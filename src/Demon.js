@@ -154,6 +154,9 @@ const DemonData = [
     return null;
   };
 
+  const DemonList = [];
+  let DemonsCollected = false;
+
 const DemonPic = styled.img`
     transform: scale(0.2);
     margin-top: -470px;
@@ -167,11 +170,22 @@ const Stats = styled.div`
     position: absolute;
 `
 
-const Demon = ({isVisible, randomIndex}) =>{
+const Demon = ({isVisible, randomIndex, summonAble}) =>{
     const RandomDemon = (DemonData, prop) =>{
+      if(summonAble===10){
+        summonAble = 10;
+      }
       if(prop==="img"){
         return DemonData[randomIndex].img;
       } else if(prop==="name") {
+        if(DemonList.length<10 && DemonsCollected === false){
+          DemonList.push(" "+DemonData[randomIndex].name);
+        } else if(DemonList.length===10 && DemonsCollected === false){
+          for(let i = 0; i < DemonList.length; i++) {
+            DemonList.splice(i, 1);
+            DemonsCollected = true;
+          }
+        }
         return DemonData[randomIndex].name;
       } else if(prop==="stats") {
         let randomBuff = Math.floor(Math.random()*10);
@@ -183,6 +197,21 @@ const Demon = ({isVisible, randomIndex}) =>{
         let curEnd = DemonData[randomIndex].End + randomBuff + randomDebuff;
         let curAg = DemonData[randomIndex].Ag + randomBuff + randomDebuff;
         let curLuck = DemonData[randomIndex].Luck + randomBuff + randomDebuff;
+        if(curStr<0){
+          curStr = 1
+        }
+        if(curMa<0){
+          curMa = 1
+        }
+        if(curEnd<0){
+          curEnd = 1
+        }
+        if(curAg<0){
+          curAg = 1
+        }
+        if(curLuck<0){
+          curLuck = 1
+        }
         let newData = [];
         return newData = [
           {
@@ -223,6 +252,7 @@ const Demon = ({isVisible, randomIndex}) =>{
         <Legend />
         <Bar dataKey="Points" barSize={20} fill="#F64C72" />
       </BarChart>
+
       </Stats>
         </>
     )

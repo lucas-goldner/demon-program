@@ -95,17 +95,19 @@ const SummonButton = styled.button`
 
 const Summon = () => {
     const [isVisible, setIsVisble] = useState(false);
+    const [summonAble, setSummonAble] = useState(0);
     const toggleVisbility = () =>{setIsVisble(!isVisible)}
-
+    const addOneSummon = () =>{setSummonAble(summonAble+1)}
+    const SummonAction = () => {toggleVisbility();summonAble<10 ? addOneSummon() : setSummonAble(10)}
     return(
         <>
         <SummonContainer>
         <Circle src="./smt_logo.png"></Circle>
-        <Demon isVisible={isVisible}randomIndex={Math.floor(Math.random()*10)}/>
+        <Demon isVisible={isVisible}randomIndex={Math.floor(Math.random()*10)}summonAble={summonAble}/>
         <ActionContainer>
         <SummonTitel>Summon Your Demons</SummonTitel>
         <SummonDescr>Click on the button below to summon 5 random demons per day</SummonDescr>
-        <SummonButton onClick={toggleVisbility}>Summon</SummonButton>
+        <SummonButton onClick={summonAble < 10 ? SummonAction : ""}>Summon</SummonButton>
         </ActionContainer>
         </SummonContainer>
         </>
