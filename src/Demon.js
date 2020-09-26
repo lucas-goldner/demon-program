@@ -258,8 +258,6 @@ const Demon = ({isVisible, randomIndex, summonAble}) =>{
         <Legend />
         <Bar dataKey="Points" barSize={20} fill="#F64C72" />
       </BarChart>
-      <h1>{DemonStats}</h1>
-      <h1>{summonAble}</h1>
       </Stats>
         </>
     )
