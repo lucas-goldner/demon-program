@@ -107,7 +107,7 @@ const Summon = () => {
         <ActionContainer>
         <SummonTitel>Summon Your Demons</SummonTitel>
         <SummonDescr>Click on the button below to summon 5 random demons per day</SummonDescr>
-        <SummonButton onClick={summonAble < 10 ? SummonAction : ""} isRed={summonAble > 9}>Summon</SummonButton>
+        <SummonButton onClick={summonAble < 10 ? SummonAction : undefined} isRed={summonAble > 9}>Summon</SummonButton>
         </ActionContainer>
         </SummonContainer>
         </>

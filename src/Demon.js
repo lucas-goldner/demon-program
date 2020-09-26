@@ -155,7 +155,9 @@ const DemonData = [
   };
 
   const DemonList = [];
+  let DemonStats = [];
   let DemonsCollected = false;
+  let DemonsCollected2 = false;
 
 const DemonPic = styled.img`
     transform: scale(0.2);
@@ -172,9 +174,6 @@ const Stats = styled.div`
 
 const Demon = ({isVisible, randomIndex, summonAble}) =>{
     const RandomDemon = (DemonData, prop) =>{
-      if(summonAble===10){
-        summonAble = 10;
-      }
       if(prop==="img"){
         return DemonData[randomIndex].img;
       } else if(prop==="name") {
@@ -213,6 +212,13 @@ const Demon = ({isVisible, randomIndex, summonAble}) =>{
           curLuck = 1
         }
         let newData = [];
+        if(DemonStats.length<10 && DemonsCollected === false){
+          DemonStats.push([curHP, curSP, curStr, curMa, curEnd, curLuck]);
+        } else if(DemonStats.length===10 && DemonsCollected2 === false){
+          console.log("ran")
+          DemonStats = DemonStats.filter((_, i) => i % 2 !== 0)
+          DemonsCollected2 = true;
+        }
         return newData = [
           {
             name: 'HP', Points: curHP,
@@ -252,7 +258,8 @@ const Demon = ({isVisible, randomIndex, summonAble}) =>{
         <Legend />
         <Bar dataKey="Points" barSize={20} fill="#F64C72" />
       </BarChart>
-
+      <h1>{DemonStats}</h1>
+      <h1>{summonAble}</h1>
       </Stats>
         </>
     )
