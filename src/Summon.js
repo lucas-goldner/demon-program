@@ -37,7 +37,7 @@ const SummonButton = styled.button`
     height: 50px;
     border: none;
     outline: none;
-    color: #fff;
+    color: #111;
     background: #111;
     cursor: pointer;
     position: relative;
@@ -80,7 +80,7 @@ const SummonButton = styled.button`
         position: absolute;
         width: 100%;
         height: 100%;
-        background: #111;
+        background: ${({ isRed }) => isRed ? 'red' : 'white'};
         left: 0;
         top: 0;
         border-radius: 10px;
@@ -107,7 +107,7 @@ const Summon = () => {
         <ActionContainer>
         <SummonTitel>Summon Your Demons</SummonTitel>
         <SummonDescr>Click on the button below to summon 5 random demons per day</SummonDescr>
-        <SummonButton onClick={summonAble < 10 ? SummonAction : ""}>Summon</SummonButton>
+        <SummonButton onClick={summonAble < 10 ? SummonAction : ""} isRed={summonAble > 9}>Summon</SummonButton>
         </ActionContainer>
         </SummonContainer>
         </>
