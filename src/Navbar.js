@@ -40,42 +40,11 @@ const ListLogin = styled.button`
 `
 
 const Login = styled.div`
-    border-color: #553D67;
-    border-style: solid;
+    background: #111;
     position: absolute;
-    background: #F64C72;
-    color: #553D67;
-    top: 55px;
-    left: 320px;
+    top: 50px;
     z-index: 2;
-    font-size: 1em;
-    display: flex;
-    flex-direction: column;
-`
-
-const InputFields = styled.input`
-    size = 10;
-`
-
-const LoginError = styled.p`
-    font-size: 0.5em;
-    color: #2F2FA2;
-`
-
-const LoginButton = styled.button`
-    color: white;
-    background-color: #553D67; 
-    border-radius: 10px;
-    border-style: none;
-`
-
-const LoginHint = styled.p`
-    font-size: 0.8em;
-`
-
-const LoginSpan = styled.span`
-    color: #2F2FA2;
-    text-decoration: underline;
+    font-size: 3em;
 `
 
 const Navbar = () => {
@@ -164,20 +133,20 @@ const Navbar = () => {
                     </>
                 ) : (
                     <>
-                    <label>Email</label> <InputFields type="text" autoFocus required value={email} onChange={e => setEmail(e.target.value)}></InputFields>
-                    <LoginError>{emailError}</LoginError>
-                    <label>Password</label> <InputFields type="text" required value={password} onChange={e => setPassword(e.target.value)}></InputFields>
-                    <LoginError>{passwordError}</LoginError>
+                    <label>Email</label> <input type="text" autoFocus required value={email} onChange={e => setEmail(e.target.value)}></input>
+                    <p>{emailError}</p>
+                    <label>Password</label> <input type="text" required value={password} onChange={e => setPassword(e.target.value)}></input>
+                    <p>{passwordError}</p>
                     <div>
                     {hasAccount ? (
                         <>
-                            <LoginButton onClick={handleLogin}>Sign In</LoginButton>
-                            <LoginHint>Don´t have an account ? <LoginSpan onClick={()=>setHasAccount(!hasAccount)}>Sign Up</LoginSpan></LoginHint>
+                            <button onClick={handleLogin}>Sign In</button>
+                            <p>Don´t have an account ? <span onClick={()=>setHasAccount(!hasAccount)}>Sign Up</span></p>
                         </>
                     ) : (
                         <>
-                            <LoginButton onClick={handleSignUp}>Sign Up</LoginButton>
-                            <LoginHint>Have an account ? <LoginSpan onClick={()=>setHasAccount(!hasAccount)}>Sign In</LoginSpan></LoginHint>
+                            <button onClick={handleSignUp}>Sign Up</button>
+                            <p>Have an account ? <span onClick={()=>setHasAccount(!hasAccount)}>Sign In</span></p>
                         </>
                     )}
                     </div>
