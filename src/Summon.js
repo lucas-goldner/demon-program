@@ -8,9 +8,6 @@ const SummonContainer = styled.div`
     margin-top: 200px;
     margin-left: -500px;
     background-color: darkblue;
-    @media (max-width: 740px) {
-        flex-direction: column;
-      }
 `
 
 const Circle = styled.img`
