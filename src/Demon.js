@@ -171,6 +171,11 @@ const Stats = styled.div`
     margin-top: 340px;
     margin-left: 1000px;
     position: absolute;
+    @media (max-width: 740px){
+      transform: scale(2);
+      margin-top: 900px;
+      margin-left: 600px;
+  }
 `
 
 const Demon = ({isVisible, randomIndex, summonAble}) =>{

@@ -13,22 +13,27 @@ const SummonContainer = styled.div`
     "summon-pic summon-pic demon-stats summon-button"
     ". . . .";
    background-color: darkblue;
+   
      @media (max-width: 740px){
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1.7fr 0.8fr;
         gap: 1px 1px;
         grid-template-areas:
-          ". summon-info ."
-          ". summon-button ."
-          "summon-pic summon-pic demon-stats"
-          "summon-pic summon-pic demon-stats";
+          "summon-info"
+          "summon-pic"
+          "demon-stats";
     }
 `
 
 const Circle = styled.img`
     transform: scale(0.8);
     grid-area: summon-pic;
+
+    @media (max-width: 740px){
+        transform: scale(0.5);
+        margin-left: -30vw;
+    }
 `
 
 const ActionContainer = styled.div`
@@ -110,6 +115,11 @@ const SummonButton = styled.button`
 const DemonContainer = styled.div`
     position: absolute;
     left: -30vw;
+    @media (max-width: 740px){
+        transform: scale(0.5);
+        left: -50vw;
+        top: 600px;
+    }
 `
 
 const Summon = () => {

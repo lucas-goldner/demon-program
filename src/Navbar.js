@@ -53,6 +53,10 @@ const Login = styled.div`
     font-size: 1em;
     display: flex;
     flex-direction: column;
+    @media (max-width: 740px){
+        left: 60vw;
+        top: 55px;
+    }
 `
 
 const InputFields = styled.input`
