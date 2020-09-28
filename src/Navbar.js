@@ -169,10 +169,10 @@ const Navbar = () => {
                     <>
                     <label>Email</label> <InputFields type="text" autoFocus required value={email} onChange={e => setEmail(e.target.value)}></InputFields>
                     <LoginError>{emailError}</LoginError>
-                    <label>Password</label> <InputFields type="text" required value={password} onChange={e => setPassword(e.target.value)}></InputFields>
+                    <label>Password</label> <InputFields type="password" required value={password} onChange={e => setPassword(e.target.value)}></InputFields>
                     <LoginError>{passwordError}</LoginError>
                     <div>
-                    {hasAccount ? (
+                    {!hasAccount ? (
                         <>
                             <LoginButton onClick={handleLogin}>Sign In</LoginButton>
                             <LoginHint>Don´t have an account ? <LoginSpan onClick={()=>setHasAccount(!hasAccount)}>Sign Up</LoginSpan></LoginHint>

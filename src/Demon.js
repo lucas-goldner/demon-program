@@ -5,6 +5,7 @@ import {
   } from 'recharts';
 
 const DemonName = styled.h1`
+  grid-area: demon-stats;
   font-size: 1.5em;
   margin-left: -100px;
   margin-top: -50px;

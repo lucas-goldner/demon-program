@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Demon from './Demon';
 
 const SummonContainer = styled.div`
+    margin-top: 10vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -106,6 +107,11 @@ const SummonButton = styled.button`
     }
 `
 
+const DemonContainer = styled.div`
+    position: absolute;
+    left: -30vw;
+`
+
 const Summon = () => {
     const [isVisible, setIsVisble] = useState(false);
     const [summonAble, setSummonAble] = useState(0);
@@ -116,7 +122,9 @@ const Summon = () => {
         <>
         <SummonContainer>
         <Circle src="./smt_logo.png"></Circle>
+        <DemonContainer>
         <Demon isVisible={isVisible}randomIndex={Math.floor(Math.random()*10)}summonAble={summonAble}/>
+        </DemonContainer>
         <ActionContainer>
         <SummonTitel>Summon Your Demons</SummonTitel>
         <SummonDescr>Click on the button below to summon 5 random demons per day</SummonDescr>
