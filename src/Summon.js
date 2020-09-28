@@ -3,23 +3,34 @@ import styled from 'styled-components';
 import Demon from './Demon';
 
 const SummonContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    margin-top: 200px;
-    margin-left: -500px;
-    background-color: darkblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0em 0em;
+    grid-template-areas:
+    "summon-pic summon-pic . summon-info"
+    "summon-pic summon-pic demon-stats summon-button"
+    ". . . .";
+   background-color: darkblue;
+     @media (max-width: 740px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 1px 1px;
+        grid-template-areas:
+          ". summon-info ."
+          ". summon-button ."
+          "summon-pic summon-pic demon-stats"
+          "summon-pic summon-pic demon-stats";
+    }
 `
 
 const Circle = styled.img`
-    transform: scale(0.4);
-    margin-top: -300px;
-    margin-left: 200px;
-
+    transform: scale(0.8);
+    grid-area: summon-pic;
 `
 
 const ActionContainer = styled.div`
-    display: flex;
-    flex-direction: column;
     margin-top: 200px;
     margin-right: 300px;
 `
@@ -27,11 +38,12 @@ const ActionContainer = styled.div`
 const SummonTitel = styled.h1`
     font-size: 2em;
     white-space: nowrap;
-    margin-top: -150px;
+    grid-area: summon-info;
 `
 
 const SummonDescr = styled.h2`
     font-size: 1.1em;
+    grid-area: summon-info;
 `
 const SummonButton = styled.button`
     height: 50px;
@@ -44,6 +56,7 @@ const SummonButton = styled.button`
     z-index: 0;
     border-radius: 10px;
     font-size: 1.5em;
+    grid-area: summon-button;
 
     :before {
         content: '';
